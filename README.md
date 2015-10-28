@@ -26,3 +26,13 @@ echo get_better_excerpt(15, '... <a href="'.get_permalink().'">Read More</a>');
 
 <p>'You might just as well say,' added the March Hare, 'that "I like what I... <a href="http://www.fillerati.com/">Read More</a></p>
 
+## Life Is Easier
+### No writing your own filters (per loop, per screen size, etc, both!?)
+
+```
+<div class="visible-xs"><?php echo get_better_excerpt(10); ?></div>
+<hr>
+<div class="visible-sm"><?php echo get_better_excerpt(15, '... <a href="'.get_permalink().'">Read More</a>'); ?></div>
+<hr>
+<div class="visible-md visible-lg"><?php echo get_better_excerpt(30, '... <a href="'.get_permalink().'">Read More</a>'); ?></div>
+```
